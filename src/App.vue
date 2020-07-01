@@ -1,55 +1,65 @@
 <template>
-  <div id="app">
+    <div id="app">
+        <main>
 
-  </div>
+            <section class="section-home-1">
+                <Header/>
+                <picture class="section-home-1__bg">
+                    <img src="" alt="">
+                </picture>
+            </section>
+
+        </main>
+    </div>
 </template>
 
 <script>
+import Header from "./components/Header";
 
 export default {
-  name: "App",
-  components: {
-    
-    
-  }
+    name: "App",
+    components: {
+        Header
+    }
 };
 </script>
 
-<style lang="scss" >
+// STYLE
+<style lang="scss">
+@import '~normalize.css';
+
 // @import '~bootstrap';
 // @import '~bootstrap-vue';
-@import '~pixel-glass/styles.css';
-@import './assets/scss/fonts.css';
 
-HTML {
-background-repeat: no-repeat;
-background-position:  50% 0;
-/* Mobile layout by default */
-background-image: url( "./assets/320.png" );
+@import '"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"';
+@import "~pixel-glass/styles.css";
+
+html {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("./assets/320.png");
 }
 /* Tablet */
-@media ( min-width: 760px ) {
-HTML {
-    /* Tablet layout */
-    background-image: url( "./assets/760.png" );
-}
+@media (min-width: 760px) {
+    html {
+        /* Tablet layout */
+        background-image: url("./assets/760.png");
+    }
 }
 /* Desktop */
-@media ( min-width: 960px ) {
-HTML {
-    /* Desktop layout */
-    background-image: url( "./assets/960.png" );
-}
+@media (min-width: 960px) {
+    html {
+        /* Desktop layout */
+        background-image: url("./assets/960.png");
+    }
 }
 
 #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-//   margin-top: 60px;
-//   background-color: $this_red_color;
-  font-family: "DINPro-Medium";
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 </style>
