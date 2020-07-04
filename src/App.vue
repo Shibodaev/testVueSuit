@@ -1,12 +1,11 @@
 <template>
     <div id="app">
+        <router-view></router-view>
         <main>
 
             <section class="section-home-1">
-                <Header/>
-                <picture class="section-home-1__bg">
-                    <img src="" alt="">
-                </picture>
+            
+     
             </section>
 
         </main>
@@ -14,13 +13,10 @@
 </template>
 
 <script>
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 export default {
-    name: "App",
-    components: {
-        Header
-    }
+    name: "App"
 };
 </script>
 

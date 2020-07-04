@@ -14,10 +14,34 @@
 
 /* stylelint-disable */
 
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/assets/scss/fonts/Gilroy-Light.woff2') format('woff2'), url('/assets/scss/fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/assets/scss/fonts/Gilroy-Regular.woff2') format('woff2'), url('/assets/scss/fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/assets/scss/fonts/Gilroy-Bold.woff2') format('woff2'), url('/assets/scss/fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 // @font-face {
 //   font-family: 'FONTNAME';
-//   src: url('../fonts/FONTNAME.woff2') format('woff2'),
-//        url('../fonts/FONTNAME.woff') format('woff');
+//   src: url('..//assets/scss/fonts/GilroyME.woff2') format('woff2'),
+//        url('..//assets/scss/fonts/GilroyME.woff') format('woff');
 //   font-weight: 400;
 //   font-style: normal;
 //   font-display: swap;
@@ -90,7 +114,7 @@ a,
 button,
 [role='button'],
 input,
-label,
+o label,
 select,
 textarea {
     touch-action: manipulation; // Стилевая коррекция 300ms задержки (для поддерживающих браузеров)
@@ -244,6 +268,13 @@ p {
     hyphenate-limit-lines: 2;
     hyphenate-limit-last: always;
     hyphenate-limit-zone: 8%;
+    font-size: $font-size;
+    color: currentColor;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.211765px;
 }
 
 address {

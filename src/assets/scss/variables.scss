@@ -27,9 +27,9 @@ $link-color--hover: darken($color-main, 15%);
 $border-color: $gray-lighten;
 // Базовая типографика
 $font-size: 16px;
-$font-size-h1: 40px;
-$font-size-h2: 32px;
-$font-size-h3: 24px;
+$font-size-h1: 52px;
+$font-size-h2: 42px;
+$font-size-h3: 22px;
 $font-size-h4: 18px;
 $font-size-h5: 16px;
 $font-size-h6: 16px;
@@ -55,6 +55,12 @@ Liberation Mono,
 Courier New,
 monospace;
 // Georgia, Times New Roman, Times, serif
+$light: 'Gilroy-Light',
+sans-serif;
+$regular:'Gilroy-Regular',
+sans-serif;
+$bold: 'Gilroy-Bold',
+sans-serif;
 // Ширины
 $screen-xs: 0;
 $screen-sm: 480px;
