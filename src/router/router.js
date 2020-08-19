@@ -1,12 +1,12 @@
-import Vue from "vue"
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 Vue.use(VueRouter);
-import homepage from '../pages/HomePage'
+import homepage from "../pages/HomePage";
 
 let router = new VueRouter({
     routes: [{
-        path: '/',
-        name: 'HomePage',
+        path: "/",
+        name: "HomePage",
         components: homepage
     }]
 });
