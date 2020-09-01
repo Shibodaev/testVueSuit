@@ -1,16 +1,23 @@
 import Vue from "vue";
+import VueRouter from "vue-router";
 import App from "./App.vue";
-import Element from 'element-ui';
-import PixelGlass from "pixel-glass";
 import router from "./router/router";
 
-// Vue.use(VueRouter);
-Vue.use(PixelGlass);
-Vue.use(Element);
+import Element from 'element-ui';
+import PixelGlass from "pixel-glass";
+
 
 Vue.config.productionTip = false;
 
+
+Vue.use(PixelGlass);
+Vue.use(Element);
+Vue.use(VueRouter);
+// const router = new VueRouter({ routes });
+
+
 new Vue({
-    render: h => h(App),
-    router
+    router,
+    render: h => h(App)
+
 }).$mount("#app");

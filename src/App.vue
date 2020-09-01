@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
     <main>
-      <section class="section-home-1"></section>
+      <router-link to="about">About</router-link>
     </main>
   </div>
 </template>
